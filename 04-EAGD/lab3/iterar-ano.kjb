@@ -18,7 +18,7 @@
     </parameter>
     <parameter>
       <name>QUANTOS_ANOS</name>
-      <default_value>1</default_value>
+      <default_value>4</default_value>
       <description/>
     </parameter>
   </parameters>
