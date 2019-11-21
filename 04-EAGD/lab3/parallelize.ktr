@@ -463,11 +463,6 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Filter rows</from>
-      <to>Select values</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>Select values</from>
       <to>Copy rows to result</to>
       <enabled>Y</enabled>
@@ -475,6 +470,11 @@
     <hop>
       <from>Get rows from result</from>
       <to>Add sequence</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filter rows</from>
+      <to>Select values</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -592,7 +592,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <send_true_to/>
+    <send_true_to>Text file output</send_true_to>
     <send_false_to/>
     <compare>
       <condition>
@@ -620,7 +620,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>784</xloc>
+      <xloc>640</xloc>
       <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
@@ -655,7 +655,7 @@
     <name>Mark portion</name>
     <type>ScriptValueMod</type>
     <description/>
-    <distribute>Y</distribute>
+    <distribute>N</distribute>
     <custom_distribution/>
     <copies>1</copies>
     <partitioning>
@@ -735,7 +735,7 @@ var PortionFlag = RowIndex >= _startIdx &amp;&amp; RowIndex &lt; _endIdx;
       </output>
     </remotesteps>
     <GUI>
-      <xloc>640</xloc>
+      <xloc>784</xloc>
       <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
